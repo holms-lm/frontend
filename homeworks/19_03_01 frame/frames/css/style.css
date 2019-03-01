@@ -1,0 +1,38 @@
+
+.table-dinosaurs{
+    width: 100%;
+    text-align: center;
+}
+.table-img{
+    width: 30%;
+    height: 400px;
+}
+.table-head{
+    height: 60px;
+}
+
+.table-dinosaurs th{
+    padding: 7px;
+}
+
+legend{
+    width: fit-content;
+}
+fieldset{
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-top-color: threedface;
+    border-right-color: threedface;
+    border-bottom-color: threedface;
+    border-left-color: threedface;
+    border-image: initial;
+}
