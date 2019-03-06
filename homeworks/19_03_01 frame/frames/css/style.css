@@ -36,3 +36,7 @@ fieldset{
     border-left-color: threedface;
     border-image: initial;
 }
+
+h1 {
+    color: red;
+}
