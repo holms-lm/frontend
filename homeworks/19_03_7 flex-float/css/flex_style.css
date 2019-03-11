@@ -37,7 +37,26 @@
 		background: #ff8800c4;
 		/*border: 2px solid black;*/
 }
+.f-header {
+	flex-basis: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #ff8800c4;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
 .flex-left {
+	flex-basis: 33%;
+	height: 400px;
+	padding-top: 30px;
+	text-align: center;
+	background: blue;
+}
+
+.f-left {
 	flex-basis: 33%;
 	height: 400px;
 	padding-top: 30px;
@@ -48,14 +67,27 @@
 .flex-right {
 	flex-basis: 67%;
 	background: green;
-	height: 400px;
+	/*height: 400px;*/
 }
+
+.f-right {
+	flex-basis: 67%;
+	background: green;
+	/*height: 400px;*/
+}
+
 .full-height {
 	height: 100%;
 	flex-wrap: wrap;
 	align-content: start;
 }
 .flex-col1, .flex-col2 {
+	flex-basis: 50%;
+	background: yellow;
+	padding-top: 30px;
+	text-align: center;
+}
+.f-col1, .f-col2 {
 	flex-basis: 50%;
 	background: yellow;
 	padding-top: 30px;
