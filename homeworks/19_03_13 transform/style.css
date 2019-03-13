@@ -126,8 +126,7 @@ hr {
 	height:50%;
 	background:  #00aef0;
 	transition:transform 1.4s;
-	/*transform: perspective(300px) rotate(15deg) skew(15deg, 15deg) translate(0%, 00%);*/
-	
+
 }
 
 .logo:hover .lt {
@@ -141,7 +140,6 @@ hr {
 
 .logo:hover .rt:hover {
 	transform:perspective(150px) rotateY(-15deg) rotateX(45deg) translateZ(15px);
-	/*transform-origin: center right;*/
 }
 
 .logo:hover .lb {
@@ -155,7 +153,7 @@ hr {
 }
 
 .lt {
-	transform: perspective(130px) rotateY(-15deg) scale(.8) translateX(20px);
+	transform: perspective(100px) rotateY(-15deg) scale(1) translateX(14px) translateZ(-25px);
 	transform-origin: bottom right;
 }
 .rt {
@@ -163,11 +161,40 @@ hr {
 	transform-origin: bottom right;
 }
 .lb {
-	transform: perspective(130px) rotateY(-15deg) scale(.8) translateX(20px) translateY(4px);
+	transform: perspective(100px) rotateY(-15deg) scale(1) translateY(4px) translateX(14px) translateZ(-25px);
 	transform-origin: top right;
 }
 
 .rb {
 	transform:perspective(130px) rotateY(-15deg) translateY(4px);
 	transform-origin: top right;
+}
+
+
+.box-logo {
+	width: 200px;
+	height: 140px;
+
+	transform: perspective(130px) rotateY(-15deg);
+	transform-origin: right center;
+	transition: transform 2s;
+}
+.box-logo .window {
+	width: 50%;
+	height:50%;
+	background:  #00aef0;
+	transition:transform 1.4s;
+	border: 2px solid white;
+}
+
+.box-logo:hover {
+	/*transform: perspective(130px) rotateY(-15deg) rotateX(-45deg);*/
+	/*transform: perspective(130px) rotateY(-15deg) rotateY(-45deg);*/
+	/*transform: perspective(130px) rotateY(-15deg) rotateZ(-90deg);*/
+}
+
+.box-logo:hover .window:hover {
+	transform: perspective(130px) translateZ(-20px);
+	transform-origin: center center;
+	transition: transform 1s;
 }
