@@ -1,0 +1,42 @@
+.row {
+    padding: 10px auto;
+
+}
+.row h1 {
+    text-align: center;
+}
+.socials {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item-social {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    transition: opacity .5s;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-image: url("image/social.png");
+}
+.fa-whatsup  {
+    background-position-x: -82px;
+    background-position-y: -32px;
+}
+
+.fa-telegram  {
+    background-position-x: -378px;
+    background-position-y: -32px;
+}
+
+.fa-facebook {
+    background-position-x: -280px;
+    background-position-y: -131px;
+}
+
+a:hover .item-social {
+    opacity: .8;
+}
