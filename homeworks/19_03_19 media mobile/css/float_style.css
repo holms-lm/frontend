@@ -1,0 +1,122 @@
+	hr {
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+
+	.column-1, .column-2, .column-3 {
+		float: left;
+		/*height: 200px;*/
+		/*border: 2px solid black;*/
+		text-align: center;
+	}
+	.column-1 {
+		border-right: 2px solid black;
+		border-bottom: 0;
+		height: 400px;
+		padding-top: 40px;
+		position: relative;
+		width: 33%;
+		/*border-right: 0;*/
+	}
+	.column-2, .column-3 {
+		border-right: 2px solid black;
+		border-bottom: 0;
+		width: 50%;
+		height: calc(100% - 43px);
+		padding-top: 30px;
+		/*border-left: 0;*/
+		/*border-bottom: 0;*/
+	}
+
+	.column-3{
+		border-right: 0;
+		border-bottom: 0;
+	}
+	.column-h3 {
+		border-right: 0;
+		border-bottom: 2px solid black;
+	}
+	.column-header {
+		border-right: 0;
+		border-bottom: 2px solid black;
+		float: left;
+		width: calc(100% + 0px);
+		border-bottom: 2px solid black;
+		text-align: center;	
+		/*position: relative;*/
+		/*top: 2px;	*/
+	}
+	.column-right {
+		border-right: 0;
+		border-bottom: 0;
+		float: left;
+		width: 67%;
+		height: 400px;
+		/*border: 2px solid black;*/
+		text-align: center;	
+		position: relative;
+		/*left: 1px;	*/
+	}
+
+	.row-float {
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid;
+	}
+	.row-float::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.clear-fix::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.container-float {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;		
+	}
+	.border-inside{
+		border: 2px;
+		height: fit-content;
+	}
+	
+	@media (min-width: 576px){
+		.container-float {
+			max-width: 540px;
+		}
+	}
+	@media (min-width: 768px){
+		.container-float {
+			max-width: 720px;
+		}
+	}
+	@media (min-width: 992px){
+		.container-float {
+			max-width: 960px;
+		}
+	}
+	@media (min-width: 1200px){
+		.container-float {
+			max-width: 1140px;
+		}
+	}
+
+	@media (max-width: 770px) {
+		.column-1, .column-right {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 575px) {
+		.container-float {
+			max-width: 320px;
+		}
+	}
+	@media (max-width: 320px) {
+		.row-float {
+			width: 320px;
+		}
+	}
