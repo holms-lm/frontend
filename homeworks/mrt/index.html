@@ -9,11 +9,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="styles/bootstrap.min.styles" rel="stylesheet">-->
     <!-- Material Design Bootstrap -->
-    <!--<link href="css/mdb.min.css" rel="stylesheet">-->
+    <!--<link href="styles/mdb.min.styles" rel="stylesheet">-->
     <!-- Your custom styles (optional) -->
-    <!--<link href="css/style.css" rel="stylesheet">-->
+    <!--<link href="styles/style.styles" rel="stylesheet">-->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,18 +41,30 @@
                     </div>
                 </div>
                 <div class="search">
-                    <input type="text" size="80">
+                    <input id="search" onfocus="search_set()" onblur="search_lost()" type="search" style="-webkit-appearance: unset;" size="20">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function search_set() {
+            let search = document.getElementById('search');
+            search.size = "80";
+        }
+        function search_lost() {
+            let search = document.getElementById('search');
+            search.size = "20";
+        }
+
+    </script>
     <div class="full-width banner">
         <div class="text">
             <span>Единый центр записи на КТ МРТ Рентген обследование</span>
         </div>
-        <div class="button">
+        <div class="button view">
             <span>Найти ближаюшую клинику</span>
+                <div class="mask"></div>
         </div>
     </div>
     <div class="flex-container">
@@ -72,8 +84,9 @@
                 <div class="text">
                     <span>Текст о сети клиник</span>
                 </div>
-                <div class="button">
+                <div class="button view">
                     <span>Найти ближаюшую клинику</span>
+                    <div class="mask"></div>
                 </div>
             </div>
         </div>

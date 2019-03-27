@@ -131,7 +131,7 @@
 		 *      var oTable = $('#example').dataTable();
 		 *
 		 *      // Highlight every second row
-		 *      oTable.$('tr:odd').css('backgroundColor', 'blue');
+		 *      oTable.$('tr:odd').styles('backgroundColor', 'blue');
 		 *    } );
 		 *
 		 *  @example
@@ -141,7 +141,7 @@
 		 *      // Filter to rows with 'Webkit' in them, add a background colour and then
 		 *      // remove the filter, thus highlighting the 'Webkit' rows only.
 		 *      oTable.fnFilter('Webkit');
-		 *      oTable.$('tr', {"search": "applied"}).css('backgroundColor', 'blue');
+		 *      oTable.$('tr', {"search": "applied"}).styles('backgroundColor', 'blue');
 		 *      oTable.fnFilter('');
 		 *    } );
 		 */
@@ -5835,8 +5835,8 @@
 	
 	/**
 	 * Append a CSS unit (only if required) to a string
-	 *  @param {string} value to css-ify
-	 *  @returns {string} value with css unit
+	 *  @param {string} value to styles-ify
+	 *  @returns {string} value with styles unit
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnStringToCss( s )
@@ -12288,7 +12288,7 @@
 		 *          "targets": [3],
 		 *          "createdCell": function (td, cellData, rowData, row, col) {
 		 *            if ( cellData == "1.7" ) {
-		 *              $(td).css('color', 'blue')
+		 *              $(td).styles('color', 'blue')
 		 *            }
 		 *          }
 		 *        } ]

@@ -11116,7 +11116,7 @@ function injectCSS(platform, css) {
 	if (!platform._style) {
 		platform._style = style;
 		css = '/* Chart.js */\n' + css;
-		style.setAttribute('type', 'text/css');
+		style.setAttribute('type', 'text/styles');
 		document.getElementsByTagName('head')[0].appendChild(style);
 	}
 

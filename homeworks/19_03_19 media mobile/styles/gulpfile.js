@@ -8,5 +8,5 @@ sass.compiler = require('node-sass');
 gulp.task('scss', function () {
   return gulp.src('./scss/flex_style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./styles/'));
 });
