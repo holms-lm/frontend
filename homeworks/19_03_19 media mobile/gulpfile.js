@@ -15,4 +15,14 @@ gulp.task('scss', function () {
       .pipe(postcss([autoprefixer({browsers: ['last 5 versions']}), nano()]))
       .pipe(gulp.dest('./styles/'));
 });
+
+//const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+
+gulp.task('imgmin', () =>
+    gulp.src('./images/origin/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./images/optimized'))
+);
+
 //1340
