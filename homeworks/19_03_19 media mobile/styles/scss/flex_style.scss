@@ -1,9 +1,6 @@
 $main-color: #c11818;
-.flex-container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
+
+@import "flex";
 
 //@media (min-width: 576px) {
 //    .flex-container {
@@ -30,6 +27,9 @@ $main-color: #c11818;
 //}
 
 .flex-container {
+    @media (max-width: 575px) {
+        max-width: 320px;
+    }
     @media (min-width: 768px) {
         max-width: 720px;
     }
@@ -44,10 +44,11 @@ $main-color: #c11818;
     }
 }
 
-
-
-.flex-row {
-    display: flex
+.flex-row, .f-row {
+    display: flex;
+    @media (max-width: 320px) {
+        min-width: 320px;
+    }
 }
 
 .flex-header {
@@ -80,9 +81,7 @@ $main-color: #c11818;
 
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
+
 
 .flex-left {
     flex-basis: 33%;
@@ -132,7 +131,7 @@ $main-color: #c11818;
 .f-col1, .f-col2 {
     flex-basis: 50%;
     background: yellow;
-    padding-top: 30px;
+    //padding-top: 30px;
     text-align: center;
     padding-top: 70px;
     border-bottom: 2px solid;
@@ -146,18 +145,43 @@ $main-color: #c11818;
     }
 }
 
-@media (max-width: 575px) {
-    .flex-container {
-        max-width: 320px;
-    }
-}
+//@media (max-width: 575px) {
+//    .flex-container {
+//        max-width: 320px;
+//    }
+//}
 
-@media (max-width: 320px) {
-    .flex-row, .f-row {
-        min-width: 320px;
-    }
-}
+//@media (max-width: 320px) {
+//    .flex-row, .f-row {
+//        min-width: 320px;
+//    }
+//}
+
+
 
 h1, .flex-left span,  .f-left span, .column-1 span {
     color: $main-color;
+}
+
+@mixin margin-v($x) {
+    margin-top: $x;
+    margin-bottom: $x;
+}
+
+@mixin margin-h($y) {
+    margin-left: $y;
+    margin-right: $y;
+}
+
+h1.main, h2.main {
+    display: table;
+    @include margin-h(auto);
+}
+
+h1.main {
+    @include margin-v(50px);
+}
+
+h2.main {
+    @include margin-v(30px);
 }
