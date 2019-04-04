@@ -15,3 +15,4 @@ gulp.task('scss', function () {
       .pipe(postcss([autoprefixer({browsers: ['last 5 versions']}), nano()]))
       .pipe(gulp.dest('./styles/'));
 });
+//1340
