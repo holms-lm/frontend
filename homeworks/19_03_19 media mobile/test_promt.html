@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Promt</title>
+    <script>
+        function quastion_age() {
+            // var a = 4;
+            // switch (a) {
+            //     case 3:
+            //         alert ('small');
+            //     case 4:
+            //         alert ('norm');
+            //     case 5:
+            //         alert ('big');
+            //     default:
+            //         alert ('не знаю')
+            // }
+            var now_year = prompt('Какой сейчас год?', 2019);
+            var age = prompt('Сколько вам лет?', '');
+            if (age>0) {
+                alert('Вы родились в ' + (now_year - age) + ' году');
+            }
+            else {alert('Введите ваш возраст перед получением результата.');}
+        }
+    </script>
+</head>
+<body>
+<button onclick="quastion_age()">Вопрос</button>
+</body>
+</html>
