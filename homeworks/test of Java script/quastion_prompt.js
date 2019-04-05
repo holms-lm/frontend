@@ -19,3 +19,38 @@ function quastion_numner() {
        alert(0);
     }
 }
+
+function login_user(){
+    var login  = prompt('Кто пришел?','');
+    var password;
+    var MSGCANCEL = 'Вход отменен';
+    if (login == 'Админ') {
+        password = prompt('Пароль?', '');
+        if (password == 'Черный Властелин') {
+            alert('Добро пожаловать!');
+        }
+        else if (password == null) {
+            alert(MSGCANCEL);
+        }
+        else {
+            alert('Пароль неверен');
+        }
+    }
+    else if (login == null) {
+        alert(MSGCANCEL);
+    }
+    else {
+        alert('Я вас не знаю');
+    }
+}
+
+function hi_user() {
+    var massage;
+    var login  = prompt('Кто пришел?','');
+    massage = (login == 'Вася') ? 'Привет' :
+        login == 'Директор' ? 'Здраствуйте' :
+            login == '' ? 'нет логина' :
+                '';
+    alert (massage);
+
+}
