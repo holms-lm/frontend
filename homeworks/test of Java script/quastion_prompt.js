@@ -54,3 +54,9 @@ function hi_user() {
     alert (massage);
 
 }
+
+function test_for() {
+    for (var i=0; i<3; i++){
+        alert(i);
+    }
+}

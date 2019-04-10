@@ -1,0 +1,12 @@
+$color: green;
+body {
+  background-color: blueviolet;
+}
+
+div {
+  background-color: $color;
+}
+
+.span {
+   background-color: $color;
+ }
