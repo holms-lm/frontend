@@ -56,7 +56,21 @@ function hi_user() {
 }
 
 function test_for() {
+    var name = "Сергей";
     for (var i=0; i<3; i++){
-        alert(i);
+        show_massage(name, i);
     }
+}
+
+
+function show_massage(name, text) {
+    alert(name +  ': ' + text);
+}
+function test_f(){
+    var test = sum2(-4, 2, 1);
+    alert(test);
+}
+
+function sum2(a, b , c) {
+    return b*b -4*a*c;
 }
