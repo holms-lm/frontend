@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hide-Show</title>
+</head>
+<body>
+    <h1>Скрытие эелемента jQuare</h1>
+    <ul id="forHide">
+        <li>Один</li>
+        <li>Два</li>
+        <li>Три</li>
+    </ul>
+
+    <button id="hide">Переключить</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('button#hide').click(function(){
+                $('ul#forHide').slideToggle();
+            });
+        })
+
+
+    </script>
+
+</body>
+</html>
